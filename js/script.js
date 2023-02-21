@@ -42,4 +42,11 @@ function draw() {
 
 function checkDeath() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+  overlay()
 }
+
+function overlay() {
+    if (gameOver) {
+        document.getElementById("overlay").style.display = "block";
+    }
+  }

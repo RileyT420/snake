@@ -9,6 +9,11 @@ export function update() {
     expandSnake(EXPANSION_RATE)
     food = getRandomFoodPosition()
   }
+  updateScore() {
+    if (onSnake(food)) {
+        getElementById
+    } 
+  }
 }
 
 export function draw(gameBoard) {
