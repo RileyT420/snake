@@ -1,5 +1,5 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection } from './snake.js'
-import { update as updateFood, draw as drawFood } from './food.js'
+import { update as updateFood, draw as drawFood, score } from './food.js'
 import { outsideGrid } from './grid.js'
 
 let lastRenderTime = 0
@@ -47,6 +47,8 @@ function checkDeath() {
 
 function overlay() {
     if (gameOver) {
+      document.getElementById("score2").innerHTML = score;
         document.getElementById("overlay").style.display = "block";
+        
     }
   }

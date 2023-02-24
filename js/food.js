@@ -1,20 +1,23 @@
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
 
+export var score = 0
 let food = getRandomFoodPosition()
 const EXPANSION_RATE = 1
 
 export function update() {
   if (onSnake(food)) {
     expandSnake(EXPANSION_RATE)
+    updateScore()
     food = getRandomFoodPosition()
   }
-  updateScore() {
-    if (onSnake(food)) {
-        getElementById
-    } 
-  }
 }
+
+export function updateScore() {
+    score++;
+    document.getElementById("score").innerHTML = score;
+  }
+
 
 export function draw(gameBoard) {
   const foodElement = document.createElement('div')

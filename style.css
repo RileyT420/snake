@@ -43,5 +43,7 @@ body {
     cursor: pointer; /* Add a pointer on hover */
   }
   .ScoreB {
-    
+    position: absolute;
+    Top: 10px;
+    Left: 10px;
   }
