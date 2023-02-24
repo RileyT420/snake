@@ -23,8 +23,10 @@ body {
 }
 
 .food {
-    background-color: hsl(0, 95%, 37%);
-    border: .25vmin solid black;
+background-image: url('/img/purepng.com-red-appleappleapplesfruitsweetred-apple-1701527181064dd8db.png');
+background-repeat: no-repeat; 
+background-attachment: relative; 
+background-size: 100% 100%;
 }
 
 
@@ -35,7 +37,7 @@ body {
     width: 200px; /* Full width (cover the whole page) */
     height: 200px; /* Full height (cover the whole page) */
     top: 15%;
-    left: 45.5%;
+    left: 45%;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
