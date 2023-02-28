@@ -18,8 +18,10 @@ body {
 }
 
 .snake {
-    background-color: hsl(123, 89%, 26%);
-    border: .25vmin solid black;
+    background-image: url('/img/deer.png');
+    background-repeat: no-repeat; 
+    background-attachment: relative; 
+    background-size: 100% 100%;
 }
 
 .food {
