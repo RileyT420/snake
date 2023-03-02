@@ -22,6 +22,26 @@ export function draw(gameBoard) {
     snakeElement.style.gridRowStart = segment.y
     snakeElement.style.gridColumnStart = segment.x
     snakeElement.classList.add('snake')
+    let inputDirection = getInputDirection();
+    if(inputDirection.y == -1)
+    {
+      snakeElement.classList.add("goingUp");
+    }
+    else if(inputDirection.y == 1)
+    {
+      snakeElement.classList.add("goingDown");
+    }
+    else if(inputDirection.x == -1)
+    {
+      snakeElement.classList.add("goingLeft");
+    }
+    else if (inputDirection.x == 1)
+    {
+      snakeElement.classList.add("goingRight");
+    }
+    else {
+      console.log("Broken");
+    }
     gameBoard.appendChild(snakeElement)
   })
 }
