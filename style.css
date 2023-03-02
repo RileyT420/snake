@@ -5,11 +5,14 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: black;
+    background-image: url('/img/forest.jpg');
+    background-repeat: no-repeat; 
+background-attachment: relative; 
+background-size: 100% 100%;
 }
 
 #game-board {
-    background-color: #532805;
+    background-color: #375a02;
     width: 100vmin;
     height: 100vmin;
     display: grid;
@@ -31,6 +34,21 @@ background-attachment: relative;
 background-size: 100% 100%;
 }
 
+#overlayA {
+  position: fixed;
+  display: block;
+  width: 20%; /* Full width (cover the whole page) */
+  height: 20%; /* Full height (cover the whole page) */
+  top: 5%;
+  left: 78%;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
+  border: 25px;
+  color:#ffffff;
+}
+
 
 #overlay {
     position: fixed;
@@ -42,9 +60,10 @@ background-size: 100% 100%;
     left: 45%;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: rgb(0, 0, 0); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+    color:rgb(140, 30, 6);
   }
   .ScoreB {
     position: absolute;
@@ -66,4 +85,8 @@ background-size: 100% 100%;
 
   .goingRight {
     transform: rotate(0deg);
+  }
+
+  .button{
+    background-color: rgb(223, 172, 5);
   }
