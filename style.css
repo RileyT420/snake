@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-image: url('/img/forest.jpg');
+    background-image: url('Img/forest.jpg');
     background-repeat: no-repeat; 
 background-attachment: relative; 
 background-size: 100% 100%;
@@ -21,14 +21,14 @@ background-size: 100% 100%;
 }
 
 .snake {
-    background-image: url('/img/deer.png');
+    background-image: url('/Img/deer.png');
     background-repeat: no-repeat; 
     background-attachment: relative; 
     background-size: 100% 100%;
 }
 
 .food {
-background-image: url('img/purepng.com-red-appleappleapplesfruitsweetred-apple-1701527181064dd8db.png');
+background-image: url('Img/purepng.com-red-appleappleapplesfruitsweetred-apple-1701527181064dd8db.png');
 background-repeat: no-repeat; 
 background-attachment: relative; 
 background-size: 100% 100%;
