@@ -21,7 +21,7 @@ background-size: 100% 100%;
 }
 
 .snake {
-    background-image: url('/Img/deer.png');
+    background-image: url('Img/deer.png');
     background-repeat: no-repeat; 
     background-attachment: relative; 
     background-size: 100% 100%;
